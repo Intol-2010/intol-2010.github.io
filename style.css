@@ -1,8 +1,11 @@
 @font-face {
-    font-family: 'MyCustomFont'; /* The name you will use in your CSS */
+    font-family: '배민을지로10년후'; /* The name you will use in your CSS */
     src: url('./BMEuljiro10yearslater.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap; /* Ensures text remains visible while the font loads */
   }
-  
+
+  body{
+    font-family: 'MyCustomFont', Arial, sans-serif;
+  }
