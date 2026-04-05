@@ -3,7 +3,7 @@
     src: url('./BMEuljiro10yearslater.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: block; /* Ensures text remains visible while the font loads */
+    font-display: auto; /* Ensures text remains visible while the font loads */
   }
 
   body{
