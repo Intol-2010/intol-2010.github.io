@@ -9,3 +9,22 @@
   body{
     font-family: '배민을지로10년후', Arial, sans-serif;
   }
+
+  h1.title{
+    padding-left: 30px;
+    height: 100%;
+    width: 100%;
+    color: azure;
+  }
+
+  div.main{
+    position: fixed; /* 스크롤 시에도 이미지 위치 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgref/bg.jpg") !important; /* 배경 이미지 URL */
+    background-size: cover; /* 이미지 크기 조절 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    z-index: -1; /* 다른 element보다 뒤에 위치 */
+  }
