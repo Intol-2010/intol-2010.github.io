@@ -3,7 +3,7 @@
     src: url('./BMEuljiro10yearslater.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: auto; /* Ensures text remains visible while the font loads */
+    font-display: block; /* Ensures text remains visible while the font loads */
   }
 
   body{
@@ -11,14 +11,16 @@
   }
 
   h1.title{
-    padding-left: 30px;
-    height: 100%;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin: 0;
     width: 100%;
     color: azure;
   }
 
   div.main{
     position: fixed; /* 스크롤 시에도 이미지 위치 고정 */
+    padding-left: 30px;
     top: 0;
     left: 0;
     width: 100%;
@@ -26,5 +28,23 @@
     background-image: url("./imgref/bg.jpg") !important; /* 배경 이미지 URL */
     background-size: cover; /* 이미지 크기 조절 */
     background-repeat: no-repeat; /* 이미지 반복 방지 */
-    z-index: -1; /* 다른 element보다 뒤에 위치 */
+    z-index: 0; /* 다른 element보다 뒤에 위치 */
+  }
+
+  div.box{
+    position: relative;
+    border:5px solid aliceblue;
+    background-color: aliceblue;
+    padding: 10px;
+    width: max-content;
+    height: max-content;
+    border-radius: 16px;
+    z-index: 2;
+  }
+
+  div.parrallel{
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: left;
   }
